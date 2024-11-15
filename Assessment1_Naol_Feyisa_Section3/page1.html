@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(245, 245, 245);
+      color: dimgray;
+    }
 
+    .header {
+      background-color: rgb(196, 252, 196);
+      color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .tabs li {
+      list-style: none;
+    }
+
+    .tabs li a {
+      text-decoration: none;
+    }
+
+    .tab {
+      margin: 0 20px;
+      padding: 6px 8px;
+      color: rgb(91, 235, 91);
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .tab:hover {
+      background-color: rgb(208, 206, 206);
+    }
+
+    .tab:active {
+      opacity: 0.8;
+    }
+
+    #section1,
+    #section2,
+    #section3 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    #section3 {
+      margin-bottom: 120px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(89, 87, 87);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid rgb(211, 211, 211);
+      border-radius: 8px;
+      width: 260px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(89, 87, 87);
+      margin: 10px 0;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      color: rgb(91, 235, 91);
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      background-color: rgb(7, 79, 7);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    Our Products
+  </div>
+
+  <ul class="tabs">
+    <li><a href="#section1" class="tab">Section 1</a></li>
+    <li><a href="#section2" class="tab">Section 2</a></li>
+    <li><a href="#section3" class="tab">Section 3</a></li>
+  </ul>
+
+  <section id="section1">
+    <div class="section-title">Section 1</div>
+    <div class="products">
+      <div class="product-card">
+        <img src="product-images/product1.avif" alt="Product 1">
+        <div class="product-title">Bloglow</div>
+        <div class="product-description"> 
+          Perfect for oily or acne-prone skin types.
+          This product is awesome and you should buy it!
+        </div>
+        <div class="product-price">$19.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product2.avif" alt="Product 2">
+        <div class="product-title">Velvet Matte Lipstick</div>
+        <div class="product-description"> 
+          Perfect for any occasion, 
+          this lipstick delivers a velvety finish without drying out your lips.
+          This product is even better!
+        </div>
+        <div class="product-price">$29.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product3.avif" alt="Product 3">
+        <div class="product-title">Vitality Ahot</div>
+        <div class="product-description">
+          A refreshing, gentle foaming cleanser that removes 
+          impurities without stripping your skin’s natural oils. 
+          Don't miss this great deal! 
+        </div>
+        <div class="product-price">$39.99</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="section-title">Section 2</div>
+    <div class="products">
+      <div class="product-card">
+        <img src="product-images/product4.avif" alt="Product 4">
+        <div class="product-title">Hydrating Cream Lipstick</div>
+        <div class="product-description">
+          With a smooth texture and radiant finish, 
+          it’s perfect for anyone who wants a healthy-looking pout.
+          This product is amazing!
+        </div>
+        <div class="product-price">$19.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product5.avif" alt="Product 5">
+        <div class="product-title"> Long-Wear Matte Liquid Lipstick</div>
+        <div class="product-description">A bold liquid lipstick with an ultra-matte finish that stays smudge-proof and transfer-resistant all day.
+           A must-have item!</div>
+        <div class="product-price">$29.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product6.avif" alt="Product 6">
+        <div class="product-title">Nourishing Night Cream</div>
+        <div class="product-description"> Rich and luxurious, this night cream provides intense hydration while you sleep, helping your skin repair and rejuvenate overnight.
+           Grab it while you can!</div>
+        <div class="product-price">$39.99</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="section-title">Section 3</div>
+    <div class="products">
+      <div class="product-card">
+        <img src="product-images/product7.avif" alt="Product 7">
+        <div class="product-title">Curology Repair Serum</div>
+        <div class="product-description">This powerful retinol serum promotes cell turnover, helping to smooth wrinkles, refine texture, and improve skin clarity.
+           A great choice for everyone!</div>
+        <div class="product-price">$19.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product8.avif" alt="Product 8">
+        <div class="product-title">Lous Vuitton Lipstick</div>
+        <div class="product-description"> This high-shine lip gloss provides a plumping effect, giving your lips a fuller, more voluminous look.
+           This is worth checking out!</div>
+        <div class="product-price">$29.99</div>
+      </div>
+      <div class="product-card">
+        <img src="product-images/product9.avif" alt="Product 9">
+        <div class="product-title">Necessaire Gel Moisturizer</div>
+        <div class="product-description">A lightweight, oil-free gel moisturizer that delivers a burst of hydration to quench thirsty skin.
+           Don't miss out!</div>
+        <div class="product-price">$39.99</div>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    @ 2024 Bloom Skin. All rights reserved.
+  </div>
+</body>
+</html>
